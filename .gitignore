@@ -1,6 +1,5 @@
 .idea/
 node_modules/
 *.exe
-ChiliquingaApp-win32-x64/
 dist/
 out/
