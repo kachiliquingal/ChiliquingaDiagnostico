@@ -1,0 +1,25 @@
+{
+  "name": "chiliquingadiagnostico",
+  "version": "1.0.0",
+  "description": "Prueba de diagnóstico de Programación Web",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kachiliquingal/ChiliquingaDiagnostico.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kachiliquingal/ChiliquingaDiagnostico/issues"
+  },
+  "homepage": "https://github.com/kachiliquingal/ChiliquingaDiagnostico#readme",
+  "devDependencies": {
+    "electron": "^38.4.0",
+    "electron-packager": "^17.1.2"
+  }
+}
