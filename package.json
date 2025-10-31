@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/kachiliquingal/ChiliquingaDiagnostico#readme",
   "devDependencies": {
-    "electron": "36.4.0",
+    "electron": "38.4.0",
     "electron-packager": "^17.1.2"
   }
 }
