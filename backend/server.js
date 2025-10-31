@@ -7,33 +7,16 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
-const perros = [
-    {
-        id: 1,
-        nombre: 'Pug',
-        descripcion: 'Los pugs son perros pequeños y robustos con una esperanza de vida de 12 a 15 años, conocidos por su carácter cariñoso y juguetón, y su apariencia distintiva de cara arrugada y hocico chato.',
-        imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zTg-kHqdfmhoZNE_5M7OsefWfvToYuHeVQ&s'
-    },
-    {
-        id: 2,
-        nombre: 'Bulldog Inglés',
-        descripcion: 'El Bulldog Inglés es un perro mediano, robusto y tranquilo, con una esperanza de vida de 8 a 10 años. Son leales, afectuosos y buenos con los niños.',
-        imagen: 'https://www.superpet.ec/wp-content/uploads/2020/05/bulldog-1.webp'
+// Endpoint que obtiene los personajes desde la API pública de Rick and Morty
+app.get('/api/personajes', async (req, res) => {
+    try {
+        const response = await fetch('https://rickandmortyapi.com/api/character');
+        const data = await response.json();
+        res.json(data.results); // puedes enviar solo los resultados
+    } catch (error) {
+        console.error('Error al obtener personajes:', error);
+        res.status(500).json({ error: 'Error al obtener los datos' });
     }
-];
-
-const usuarios = [
-    { id: 1, nombre: 'Maria Anders', descripcion: 'President' },
-    { id: 2, nombre: 'Francisco Chang', descripcion: 'Vice President' },
-    { id: 3, nombre: 'Kuc Puh', descripcion: 'Salesman' }
-];
-
-app.get('/api/perros', (req, res) => {
-    res.json(perros);
-});
-
-app.get('/api/usuarios', (req, res) => {
-    res.json(usuarios);
 });
 
 app.listen(PORT, () => {
