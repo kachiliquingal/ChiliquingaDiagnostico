@@ -29,16 +29,27 @@ cd ChiliquingaDiagnostico
 This project uses a single package.json at the root, so just run:  
 #### npm install
 
-### 3️⃣ Run the backend server
+### 3️⃣ Run the project in development mode (recommended)
 
-Start the Express API (this must stay running): 
+This command will start both the backend and the Electron app simultaneously:
+
+#### npm run dev
+
+You’ll see the backend server running at http://localhost:3000
+, and the Electron desktop window will open automatically.
+
+### 4️⃣ Run the backend server manually (optional)
+
+If you prefer to run each part separately, start the Express API first
+
 #### npm run backend
 
 You’ll see a message like:  Servidor corriendo en http://localhost:3000
 
-### 4️⃣ Start the Electron desktop app
+### 5️⃣ Start the Electron desktop app manually (optional)
 
-Open a new terminal (don’t stop the backend) and run: 
+Open a new terminal (don’t stop the backend) and run:
+
 #### npm start
 
 ### 🖥️ Packaging for Windows
