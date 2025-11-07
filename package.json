@@ -6,6 +6,7 @@
   "scripts": {
     "start": "electron .",
     "backend": "node backend/server.js",
+    "dev": "concurrently \"npm run backend\" \"npm start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/kachiliquingal/ChiliquingaDiagnostico#readme",
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "electron": "38.4.0",
     "electron-packager": "^17.1.2"
   },
