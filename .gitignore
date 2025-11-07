@@ -1,25 +1,31 @@
-
-.idea/
-
 node_modules/
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+dist/
+out/
+build/
+release/
+DiagnosticoApp-*/
+
 *.exe
 *.app
 *.dmg
 *.deb
 
-*/*-win32-*
-*/*-darwin-*
-*/*-linux-*
+.idea/
+.vscode/
+
+.env
+.env.local
+.env.*.local
 
 .DS_Store
 Thumbs.db
 
-dist/
-out/
+*.tmp
+*.temp
+*.bak
 
-.env
