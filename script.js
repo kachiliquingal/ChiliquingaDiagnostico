@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function cargarPersonajes() {
     try {
-        const res = await fetch('http://localhost:3000/api/personajes');
+        const res = await fetch('/api/personajes');
         const personajes = await res.json();
 
         const tbody = document.getElementById('tabla-personajes');
