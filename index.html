@@ -2,9 +2,91 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Prueba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Conocimiento</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<h1>Hola mundo</h1>
+
+<body class="bg-light">
+
+<div class="container">
+    <div class="row justify-content-center g-4">
+
+        <div class="col-md-5">
+            <div class="card shadow-sm">
+                <div class="d-flex align-items-center p-3">
+                    <img class="rounded me-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zTg-kHqdfmhoZNE_5M7OsefWfvToYuHeVQ&s" alt="Pug" width="100">
+                    <h4 class="mb-0">Pug</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Los pugs son perros pequeños y robustos con una esperanza de vida de 12 a 15 años,
+                        conocidos por su carácter cariñoso y juguetón, y su apariencia distintiva de cara arrugada
+                        y hocico chato. Son buenos perros de compañía, pero requieren cuidados especiales debido
+                        a sus problemas de salud.
+                    </p>
+                    <button class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card shadow-sm">
+                <div class="d-flex align-items-center p-3">
+                    <img class="rounded me-3" src="https://www.superpet.ec/wp-content/uploads/2020/05/bulldog-1.webp" alt="Bulldog Inglés" width="100">
+                    <h4 class="mb-0">Bulldog Inglés</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        El Bulldog Inglés es un perro mediano, robusto y tranquilo, con una esperanza de vida
+                        de 8 a 10 años. Son leales, afectuosos y buenos con los niños, aunque pueden ser tercos
+                        y requieren paciencia para el entrenamiento.
+                    </p>
+                    <button class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+        <button id="btn-mostrar" class="btn btn-success btn-lg">Mostrar personajes</button>
+    </div>
+
+    <div class="mt-5">
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+            <tr>
+                <th>N</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+            </tr>
+            </thead>
+            <tbody id="tabla-personajes">
+            <tr>
+                <td>1</td>
+                <td>Maria Anders</td>
+                <td>President</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Francisco Chang</td>
+                <td>Vice President</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kuc Puh</td>
+                <td>Salesman</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
